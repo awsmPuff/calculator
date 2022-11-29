@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Calculator app</title>
+  <link rel="stylesheet" href="./css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap" rel="stylesheet">
+
+</head>
+<body class="theme-one">
+  <section class="container">
+    <header>
+      <h1>calc</h1>
+      <div class="theme">
+        <h2>THEME</h2>
+        <div class="control">
+          <div class="f-line">
+            <span>1</span>
+            <span>2</span>
+            <span>3</span>
+          </div>
+          <div class="bar">
+            <div class="switch">
+              <input type="radio" name="theme-type" value="one" id="first">
+              <input type="radio" name="theme-type" value="two" id="second">
+              <input type="radio" name="theme-type" value="three" id="third">
+            </div>
+            <div class="ball"></div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <input type="text" class="screen" value="" disabled />
+      <section class="calculate keyss">
+        <div class="keys">
+          <button class="s-1" value="7">7</button>
+          <button class="s-2" value="8">8</button>
+          <button class="s-3" value="9">9</button>
+          <button class="s-4 delete" value="del">DEL</button>
+          <button class="s-5" value="4">4</button>
+          <button class="s-6" value="5">5</button>
+          <button class="s-7" value="6">6</button>
+          <button class="operator s-8" value="+">+</button>
+          <button class="s-9" value="1">1</button>
+          <button class="s-10" value="2">2</button>
+          <button class="s-11" value="3">3</button>
+          <button class="operator s-12" value="-">-</button>
+          <button class="s-13" value=".">.</button>
+          <button class="s-14" value="0">0</button>
+          <button class="operator s-15" value="/">&divide;</button>
+          <button class="operator s-16" value="*">&times;</button>
+          <button class="reset s-17" value="reset">RESET</button>
+          <button class="equal operator s-18" value="=">=</button>
+        </div>
+      </section>
+    </main>
+  </section>
+  <script src="./script.js"></script>
+</body>
+</html>

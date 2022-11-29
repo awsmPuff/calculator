@@ -1,0 +1,360 @@
+* {
+  font-family: "League Spartan", sans-serif;
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+html {
+  font-size: 30px;
+  width: 100vw;
+  height: 100vh;
+}
+
+body {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: auto;
+  width: 100%;
+  height: 100%;
+}
+
+input[type=radio] {
+  cursor: pointer;
+  width: 0.8rem;
+  height: 0.8rem;
+  opacity: 0;
+}
+
+button {
+  border: none;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  border-radius: 0.2rem;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: auto;
+}
+
+button:hover,
+.ball:hover {
+  filter: brightness(125%);
+}
+
+section.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  width: 90%;
+}
+section.container header {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: auto;
+}
+section.container header h1 {
+  font-size: 0.9rem;
+}
+section.container header .theme {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0.6rem;
+}
+section.container header .theme h2 {
+  font-size: 0.4rem;
+  margin-top: 0.6rem;
+}
+section.container header .theme .control {
+  width: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.2rem;
+}
+section.container header .theme .control .f-line {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  gap: auto;
+}
+section.container header .theme .control .f-line span {
+  font-size: 0.4rem;
+}
+section.container header .theme .control .bar {
+  width: 100%;
+  height: 1rem;
+  border-radius: 0.5rem;
+  padding: 0.2rem;
+  position: relative;
+}
+section.container header .theme .control .bar .switch {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  gap: auto;
+  position: relative;
+  cursor: pointer;
+}
+section.container header .theme .control .bar .switch > * {
+  position: absolute;
+}
+section.container header .theme .control .bar .switch input[type=radio]:first-of-type {
+  left: 0rem;
+}
+section.container header .theme .control .bar .switch input[type=radio]:nth-of-type(2) {
+  left: 0.9rem;
+}
+section.container header .theme .control .bar .switch input[type=radio]:last-of-type {
+  left: 1.8rem;
+}
+section.container header .theme .control .bar .ball {
+  border-radius: 50%;
+  width: 0.6rem;
+  height: 0.6rem;
+  cursor: pointer;
+  position: absolute;
+  top: 0.2rem;
+  left: 0.2rem;
+  transition: all 0.5s ease;
+}
+section.container main {
+  width: 100%;
+  height: 16rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.7rem;
+}
+section.container main input.screen {
+  width: 100%;
+  padding: 1rem;
+  height: 2.5rem;
+  text-align: right;
+  font-size: 1.2rem;
+  border: none;
+  outline: transparent;
+  border-radius: 0.3rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  gap: auto;
+}
+section.container main section.calculate {
+  width: 100%;
+  height: 12.8rem;
+  padding: 0.8rem 1rem;
+  border-radius: 0.3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+section.container main section.calculate .keys {
+  width: 9.7rem;
+  min-width: 100%;
+  height: 12rem;
+  display: grid;
+  grid-template-areas: "a-1 a-2 a-3 a-4" "a-5 a-6 a-7 a-8" "a-9 a-10 a-11 a-12" "a-13 a-14 a-15 a-16" "a-17 a-17 a-18 a-18";
+  gap: 0.5rem;
+}
+section.container main section.calculate .keys .s-1 {
+  grid-area: a-1;
+}
+section.container main section.calculate .keys .s-2 {
+  grid-area: a-2;
+}
+section.container main section.calculate .keys .s-3 {
+  grid-area: a-3;
+}
+section.container main section.calculate .keys .s-4 {
+  grid-area: a-4;
+  font-size: 0.6rem;
+}
+section.container main section.calculate .keys .s-5 {
+  grid-area: a-5;
+}
+section.container main section.calculate .keys .s-6 {
+  grid-area: a-6;
+}
+section.container main section.calculate .keys .s-7 {
+  grid-area: a-7;
+}
+section.container main section.calculate .keys .s-8 {
+  grid-area: a-8;
+}
+section.container main section.calculate .keys .s-9 {
+  grid-area: a-9;
+}
+section.container main section.calculate .keys .s-10 {
+  grid-area: a-10;
+}
+section.container main section.calculate .keys .s-11 {
+  grid-area: a-11;
+}
+section.container main section.calculate .keys .s-12 {
+  grid-area: a-12;
+}
+section.container main section.calculate .keys .s-13 {
+  grid-area: a-13;
+}
+section.container main section.calculate .keys .s-14 {
+  grid-area: a-14;
+}
+section.container main section.calculate .keys .s-15 {
+  grid-area: a-15;
+}
+section.container main section.calculate .keys .s-16 {
+  grid-area: a-16;
+}
+section.container main section.calculate .keys .s-17 {
+  grid-area: a-17;
+  font-size: 0.6rem;
+}
+section.container main section.calculate .keys .s-18 {
+  grid-area: a-18;
+}
+section.container main section.calculate .keys button {
+  width: 100%;
+  height: 1.8rem;
+}
+section.container main section.calculate .keys button.reset,
+section.container main section.calculate .keys button.equal {
+  width: 100%;
+}
+
+.theme-one {
+  background-color: hsl(222deg, 26%, 31%);
+  color: hsl(0deg, 0%, 100%);
+}
+.theme-one .bar,
+.theme-one .calculate {
+  background-color: hsl(223deg, 31%, 20%);
+}
+.theme-one .screen {
+  color: hsl(0deg, 0%, 100%);
+  background-color: hsl(224deg, 36%, 15%);
+}
+.theme-one .ball {
+  background-color: hsl(6deg, 63%, 50%);
+}
+.theme-one .keys button {
+  color: hsl(221deg, 14%, 31%);
+  background-color: hsl(30deg, 25%, 89%);
+  box-shadow: 0 0.13rem 0 0.01rem hsl(28deg, 16%, 65%);
+}
+.theme-one .keys .delete,
+.theme-one .keys .reset {
+  color: hsl(0deg, 0%, 100%);
+  background-color: hsl(225deg, 21%, 49%);
+  box-shadow: 0 0.13rem 0 0.01rem hsl(224deg, 28%, 35%);
+}
+.theme-one .keys .equal {
+  color: hsl(0deg, 0%, 100%);
+  background-color: hsl(6deg, 63%, 50%);
+  box-shadow: 0 0.13rem 0 0.01rem hsl(6deg, 70%, 34%);
+}
+
+.theme-two {
+  background-color: hsl(0deg, 0%, 90%);
+  color: hsl(60deg, 10%, 19%);
+}
+.theme-two .bar,
+.theme-two .calculate {
+  background-color: hsl(0deg, 5%, 81%);
+}
+.theme-two .screen {
+  color: hsl(60deg, 10%, 19%);
+  background-color: hsl(0deg, 0%, 93%);
+}
+.theme-two .ball {
+  background-color: hsl(25deg, 98%, 40%);
+}
+.theme-two .keys button {
+  color: hsl(60deg, 10%, 19%);
+  background-color: hsl(45deg, 7%, 89%);
+  box-shadow: 0 0.13rem 0 0.01rem hsl(35deg, 11%, 61%);
+}
+.theme-two .keys .delete,
+.theme-two .keys .reset {
+  color: hsl(0deg, 0%, 100%);
+  background-color: hsl(185deg, 42%, 37%);
+  box-shadow: 0 0.13rem 0 0.01rem hsl(185deg, 58%, 25%);
+}
+.theme-two .keys .equal {
+  color: hsl(0deg, 0%, 100%);
+  background-color: hsl(25deg, 98%, 40%);
+  box-shadow: 0 0.13rem 0 0.01rem hsl(25deg, 99%, 27%);
+}
+
+.theme-three {
+  background-color: hsl(268deg, 75%, 9%);
+  color: hsl(52deg, 100%, 62%);
+}
+.theme-three .bar,
+.theme-three .calculate {
+  background-color: hsl(268deg, 71%, 12%);
+}
+.theme-three .screen {
+  color: hsl(52deg, 100%, 62%);
+  background-color: hsl(268deg, 71%, 12%);
+}
+.theme-three .ball {
+  background-color: hsl(176deg, 100%, 44%);
+}
+.theme-three .keys button {
+  color: hsl(52deg, 100%, 62%);
+  background-color: hsl(268deg, 47%, 21%);
+  box-shadow: 0 0.13rem 0 0.01rem hsl(290deg, 70%, 36%);
+}
+.theme-three .keys .delete,
+.theme-three .keys .reset {
+  color: hsl(0deg, 0%, 100%);
+  background-color: hsl(281deg, 89%, 26%);
+  box-shadow: 0 0.13rem 0 0.01rem hsl(285deg, 91%, 52%);
+}
+.theme-three .keys .equal {
+  color: hsl(198deg, 20%, 13%);
+  background-color: hsl(176deg, 100%, 44%);
+  box-shadow: 0 0.13rem 0 0.01rem hsl(177deg, 92%, 70%);
+}
+
+@media (min-width: 700px) {
+  html {
+    font-size: 31px;
+  }
+  section.container {
+    width: 60%;
+  }
+}
+@media (min-width: 1400px) {
+  html {
+    font-size: 32px;
+  }
+  section.container {
+    width: 30%;
+  }
+}/*# sourceMappingURL=styles.css.map */
