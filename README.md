@@ -33,8 +33,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [https://github.com/awsmPuff/calculator](https://your-solution-url.com)
-- Live Site URL: [https://awsmpuff.github.io/calculator/](https://your-live-site-url.com)
+- Solution URL: [https://github.com/awsmPuff/calculator]([https://your-solution-url.com](https://github.com/awsmPuff/calculator))
+- Live Site URL: [https://awsmpuff.github.io/calculator/]([https://your-live-site-url.com](https://awsmpuff.github.io/calculator/))
 
 ## My process
 
